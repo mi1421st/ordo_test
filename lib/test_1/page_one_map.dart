@@ -19,8 +19,8 @@ class PageOneMapSection extends StatelessWidget{
           child: Image.asset(
               "assets/test_1/tracking.png",
             height: height * 0.6,
-            width: width *0.6,
-            fit: BoxFit.cover,
+            width: width * 0.6,
+            fit: BoxFit.fitWidth,
           ),
         ),
       ],
