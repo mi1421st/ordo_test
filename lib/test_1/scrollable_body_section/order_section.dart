@@ -37,10 +37,16 @@ class OrderSection extends StatelessWidget{
                       children: [
                         Row(
                           children: [
-                            Image.asset(
-                                "assets/test_1/order.png",
-                              width: 80,
-                              height: 80,
+                            Container(
+                              decoration: BoxDecoration(
+                                shape: BoxShape.circle
+                              ),
+                              clipBehavior: Clip.antiAliasWithSaveLayer,
+                              child: Image.asset(
+                                  "assets/test_1/order.png",
+                                width: 80,
+                                height: 80,
+                              ),
                             ),
                             SizedBox(
                               width: 5,

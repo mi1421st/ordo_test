@@ -32,6 +32,10 @@ class HeaderSection extends StatelessWidget {
                       fit: BoxFit.contain,
                     ),
                     Container(
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle
+                      ),
+                      clipBehavior: Clip.antiAliasWithSaveLayer,
                       // color: Colors.blue,
                       child: Align(
                         alignment: Alignment.centerRight,
@@ -71,13 +75,18 @@ class HeaderSection extends StatelessWidget {
             ],
           ),
           Container(
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              // color: Colors.deepOrangeAccent
+            ),
+            clipBehavior: Clip.antiAliasWithSaveLayer,
             padding: EdgeInsets.symmetric(horizontal: 10),
             // color: Colors.deepOrangeAccent,
             child: Image.asset(
               "assets/test_1/Phone.png",
               width: 80,
               height: 80,
-              fit: BoxFit.contain,
+              fit: BoxFit.cover,
             ),
           ),
 
